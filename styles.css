@@ -1,0 +1,388 @@
+body {
+  transition: all 0.5s;
+  transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+  height: 100vh;
+  width: 100vw;
+  background-image: url("file/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;
+  padding : 0px;
+  overflow: hidden;
+}
+
+#welcome {
+  margin: auto;
+  margin-top: 30vh;
+  height: 60vh;
+  width: 600px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#welcome-head {
+  font-size: 40px;
+  font-weight: 900;
+  width: 380px;
+}
+
+#welcome-top {
+  display: flex;
+  flex-direction: column;
+}
+
+p, #start {
+  margin: 0px;
+  text-align: center;
+  align-self: center;
+}
+
+#start {
+  transition: all 0.5s;
+  transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: black;
+  color: white;
+  margin: 40px;
+  height: 40px;
+  width: auto;
+  font-size: 20px;
+  font-weight: 900px;
+  border-radius:10px ;
+}
+
+#start:hover {
+  font-weight: 900;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -10px -10px 20px rgba(255, 255, 255, 0.5);
+}
+
+#welcome-discribe {
+  font-weight: 900;
+}
+
+span {
+  color: #f9846b;
+}
+
+#source {
+  opacity: 50%;
+}
+
+#info-card {
+  opacity: 60%;
+  left: 110vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-content: center ;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  height: 800px;
+  width: 300px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  padding: 10px;
+  margin: 40px;
+  margin-top: 20px;
+}
+
+#image {
+  margin-bottom: 10px;
+  height: 220px;
+  border-radius: 8px;
+  border-width: 5px;
+  border-color: rgb(139, 139, 139);
+  border-style: solid;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#name {
+  margin-bottom: 10px;
+  align-self: center;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+#tags {
+  align-self: center;
+  width: 280px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#rarity, #seasonality {
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100px;
+  background-color: rgb(42, 173, 224);
+  color: white;
+  align-self: center;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+#description {
+  align-self: center;
+  width: 280px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.showsize {
+  background-color: black;
+}
+
+#size {
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+#size-pies {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+#size-pies div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+.inpie-text {
+  margin-top: 10px;
+  overflow: visible;
+  text-align: center;
+  width: 52px;
+  height: 12px;
+}
+
+#extra_small, #small, #medium, #large, #extra_large{
+  align-self: center;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+
+
+#extra_small{
+  width: 5px;
+  height: 5px;
+}
+
+#small{
+  width: 10px;
+  height: 10px;
+}
+
+#medium{
+  width: 20px;
+  height: 20px;
+}
+
+#large{
+  width: 36px;
+  height: 36px;
+}
+
+#extra_large{
+  width: 50px;
+  height: 50px;
+}
+
+.extra_small{
+  width: 5px;
+  height: 5px;
+}
+
+.small{
+  width: 10px;
+  height: 10px;
+}
+
+.medium{
+  width: 20px;
+  height: 20px;
+}
+
+.large{
+  width: 36px;
+  height: 36px;
+}
+
+.extra_large{
+  width: 50px;
+  height: 50px;
+}
+
+
+#chance-title, #size-title {
+  text-align: center;
+  align-self: center;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 10px;
+  width: 150px;
+}
+
+#chance, #size {
+
+  font-size: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 5px;
+}
+
+#chance-title{
+  align-self: center;
+}
+
+#chance-graph {
+  display: flex;
+  justify-content: center;
+}
+
+#chance-y-legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content:end;
+  padding-bottom: 9px;
+}
+
+#the-bars, #chance-x-legend {
+  font-size: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+
+#chance-bars {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+.chance-bar {
+  align-self: baseline;
+  margin-bottom: auto;
+  margin: 3px;
+  width: 12px;
+  height: 200px;
+  background-color: rgb(42, 173, 224);
+  border-radius: 2px;
+}
+
+.month {
+  margin: 3px;
+}
+
+#controls {
+  color:rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+#close {
+  transition: all 0.5s;
+  transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#close:hover {
+  font-weight: 900;
+}
+
+#timebar {
+  transition: all 0.5s;
+  transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+  position: absolute;
+  top: 110vh;
+  left: 10vw;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+
+#months {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 600;
+  color:rgba(0, 0, 0, 0.5);
+}
+
+#progress-bar {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#progressmade, #progressleft {
+  transition: all 0.5s;
+  transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+  height: 4px;
+}
+
+#progressmade {
+  width: 30vw;
+  background-color: black;
+}
+
+#progressleft {
+  width: 50vw;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.allyear {
+  position: absolute;
+  border-radius: 50%;
+  border-width: 5px;
+  border-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(34, 74, 255, 0.815);
+}
+
+.seasonal {
+  position: absolute;
+  border-radius: 50%;
+  border-width: 5px;
+  border-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 119, 40, 0.877);
+}
+
+.seasonal:hover, .allyear:hover {
+  transition: all 0.5s;
+  transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -10px -10px 20px rgba(255, 255, 255, 0.5);
+}
+
+.hidden {
+  display: none;
+}
